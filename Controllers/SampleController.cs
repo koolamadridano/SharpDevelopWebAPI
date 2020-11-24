@@ -41,12 +41,7 @@ namespace SharpDevelopWebApi.Controllers
 			return Ok(result.ToBase64String());
 		}
 
-        [HttpPost]
-        [Route("api/sample")]
-        public IHttpActionResult Post(Product product)
-        {
-            return Ok(product);
-        }
+
 
         [HttpPost]
         [FileUpload.SwaggerForm()]

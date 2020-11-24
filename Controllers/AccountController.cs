@@ -35,21 +35,7 @@ namespace SharpDevelopWebApi.Controllers
             var userId = UserAccount.Create(newUser.UserName, newUser.Password, newUser.Role);
             if (userId != null)
             {
-            	// Link User Account to Entities e.g. Student, Employee, Customer
-            	if(newUser.Role == "doctor")
-            	{
-            		var doctor = new Doctor();
-            		doctor.UserId = userId.Value;            		
-            		_db.Doctors.Add(doctor);
-            		_db.SaveChanges();
-            	}
-            	else if(newUser.Role == "patient")
-            	{
-            		var p = new Patient();
-            		p.UserId = userId.Value;
-            		_db.Patients.Add(p);
-            		_db.SaveChanges();
-            	}
+    
             	// Feel free to remove the ABOVE code if not needed.
                 
             	return Ok(new { UserId = userId, Message = "Account successfully created" });

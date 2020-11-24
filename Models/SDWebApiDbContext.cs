@@ -8,18 +8,10 @@ namespace SharpDevelopWebApi.Models
 {
     public class SDWebApiDbContext : DbContext
     {
-        public SDWebApiDbContext() : base("SDWebApiLocal") // name_of_dbconnection_string
+        public SDWebApiDbContext() : base("StudentGradeDb") // name_of_dbconnection_string
         {
         }
-
         public DbSet<UserAccount> Users { get; set; }
-
-
-
-
-        public DbSet<Patient> Patients { get; set; }
-        public DbSet<Doctor> Doctors { get; set; }
-        
         public DbSet<Person> Persons { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }

@@ -209,14 +209,9 @@
     <Compile Include="Helpers\TuesPechkinPdf.cs" />
     <Compile Include="Helpers\UserAccount.cs" />
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Course.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\Faculty.cs" />
-    <Compile Include="Models\Patient.cs" />
     <Compile Include="Models\Person.cs" />
-    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Models\SDWebApiDbContext.cs" />
     <Compile Include="Models\Student.cs" />
@@ -242,7 +237,8 @@
           <IISUrl>http://localhost:8085/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl></CustomServerUrl>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
